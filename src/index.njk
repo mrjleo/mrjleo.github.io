@@ -1,0 +1,41 @@
+{% set title = 'Jurek Leonhardt' %}
+{% extends "layout.njk" %}
+
+{% block body %}
+<main class="container flex flex-col columns-2 gap-32 justify-center lg:flex-row">
+  <div class="min-w-fit mt-16 lg:my-auto text-black dark:text-white">
+    <img class="mx-auto h-32 rounded-full lg:h-48 mb-4" src="img/me.png">
+    <p class="text-center text-xl font-bold my-2">Jurek Leonhardt</p>
+    <p class="text-center text-md">PhD Candidate</p>
+    <p class="text-center text-md">L3S Research Center</p>
+    <p class="text-center text-md">Leibniz University Hannover, Germany</p>
+    <p class="block text-center mt-8">
+      {% for item in social_media %}
+      <a href="{{ item.url }}">
+        <i class="fa-brands {{ item.icon }} mx-2 text-4xl hover:scale-125 transition-all"></i>
+      </a>
+      {% endfor %}
+    </p>
+  </div>
+  <div class="prose dark:prose-invert lg:my-auto">
+    <h1>Hey 👋</h1>
+    <p>
+      I'm a PhD student at
+      <a href="https://l3s.de/">L3S Research Center</a>,
+      <a href="https://uni-hannover.de">Leibniz University Hannover</a>,
+      Germany. My advisor is
+      <a href="https://www.avishekanand.com/">Prof. Avishek Anand</a>.
+    </p>
+    <p>
+      I mainly work on information retrieval. Specifically, my current focus lies on <b>efficiency of neural ranking
+        models</b>. Less prominently, I work on effectiveness and interpretability (by design) for ranking and
+      retrieval.
+    </p>
+    <h2>Research Interests</h2>
+    <ul>
+      <li>Efficient and Effective Neural Ranking</li>
+      <li>Interpretable Models for Information Retrieval</li>
+    </ul>
+  </div>
+</main>
+{% endblock %}
