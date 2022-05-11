@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/main.bundle.css">
+  <script src="/assets/main.bundle.js" defer></script>
+  <title>Projects</title>
+</head>
+
+<body class=" bg-white dark:bg-neutral-800 flex flex-col justify-between min-h-screen">
+  <nav class="py-4 mb-8" x-data>
+  <div class="container flex justify-between font-light text-black dark:text-white">
+    <a class="" href="/">Home</a>
+
+    
+    <div class="hidden md:flex items-center gap-8">
+    
+        <a class="underline" href="/projects">
+          Projects
+        </a>
+    
+        <a class="" href="/publications">
+          Publications
+        </a>
+    
+    </div>
+    <button class="md:hidden" @click="$store.nav.toggle()">
+      <svg x-show="!$store.nav.isOpen" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"/>
+      </svg>
+      <svg x-show="$store.nav.isOpen" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
+      </svg>
+    </button>
+  </div>
+
+  
+  <nav class="container mt-8 flex flex-col gap-3 md:hidden font-light text-black dark:text-white" x-cloak x-show="$store.nav.isOpen">
+    
+      <a class="underline" href="/projects">
+        Projects
+      </a>
+    
+      <a class="" href="/publications">
+        Publications
+      </a>
+    
+  </nav>
+</nav>
+
+  
+  <div class="container prose dark:prose-invert">
+    <h1>Projects</h1>
+<h2>Fast-Forward Indexes</h2>
+<p>Fast-Forward indexes combine the efficiency of lexical sparse retrieval methods with the effectiveness of semantic dense retrieval methods. Our approach
+outperforms both sparse (e.g. BM25) and dense (e.g. TCT-ColBERT) retrievers and is more efficient than dense retrieval.</p>
+<pre><code>pip install fast-forward-indexes
+</code></pre>
+<ul>
+<li>Fast CPU-based ranking</li>
+<li>Index compression</li>
+<li>Early stopping for efficiency</li>
+</ul>
+<p><a href="https://mrjleo.github.io/fast-forward-indexes/latest/fast_forward.html">API</a> | <a href="https://github.com/mrjleo/fast-forward-indexes">GitHub</a> | <a href="https://pypi.org/project/fast-forward-indexes/">PyPI</a></p>
+<h2>Ranking Models</h2>
+<p>This repository contains the implementations of our ranking models as well as some baselines. It supports training, validation, testing and re-ranking.</p>
+<p><a href="https://github.com/mrjleo/ranking-models">GitHub</a></p>
+<h2>Ranking Utilities</h2>
+<p>This library provides utilities for training ranking models, offering integration with <a href="https://www.pytorchlightning.ai/">PyTorch Lightning</a>.</p>
+<ul>
+<li>Dataset parsing and pre-processing</li>
+<li>Pointwise and pairwise training loss</li>
+<li>Validation using ranking metrics</li>
+</ul>
+<p><a href="https://github.com/mrjleo/ranking-utils">GitHub</a></p>
+
+  </div>
+
+  <div class="border-t border-neutral-600 py-4 mt-8">
+  <div class="container flex flex-col items-center lg:flex-row lg:items-start gap-4 lg:gap-8 font-light text-black dark:text-white">
+    <p>© 2022 Jurek Leonhardt</p>
+    <p class="text-center lg:mr-auto">Made with
+      <a href="https://github.com/mattwaler/tea-stack">TEA Stack</a>,
+      <a href="https://www.11ty.dev/">11ty</a>,
+      <a href="https://tailwindcss.com/">tailwindcss</a>,
+      <a href="https://alpinejs.dev/">Alpine.js</a> and
+      <a href="https://fontawesome.com/">Font Awesome</a>
+    </p>
+    
+        <a href="/datenschutz">
+          Datenschutz
+        </a>
+    
+        <a href="/impressum">
+          Impressum
+        </a>
+    
+  </div>
+</div>
+
+</body>
+</html>

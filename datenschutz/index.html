@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/main.bundle.css">
+  <script src="/assets/main.bundle.js" defer></script>
+  <title>Datenschutz</title>
+</head>
+
+<body class=" bg-white dark:bg-neutral-800 flex flex-col justify-between min-h-screen">
+  <nav class="py-4 mb-8" x-data>
+  <div class="container flex justify-between font-light text-black dark:text-white">
+    <a class="" href="/">Home</a>
+
+    
+    <div class="hidden md:flex items-center gap-8">
+    
+        <a class="" href="/projects">
+          Projects
+        </a>
+    
+        <a class="" href="/publications">
+          Publications
+        </a>
+    
+    </div>
+    <button class="md:hidden" @click="$store.nav.toggle()">
+      <svg x-show="!$store.nav.isOpen" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"/>
+      </svg>
+      <svg x-show="$store.nav.isOpen" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
+      </svg>
+    </button>
+  </div>
+
+  
+  <nav class="container mt-8 flex flex-col gap-3 md:hidden font-light text-black dark:text-white" x-cloak x-show="$store.nav.isOpen">
+    
+      <a class="" href="/projects">
+        Projects
+      </a>
+    
+      <a class="" href="/publications">
+        Publications
+      </a>
+    
+  </nav>
+</nav>
+
+  
+  <div class="container prose dark:prose-invert">
+    <h1>Datenschutz</h1>
+<p>Im Folgenden möchten wir dich aufklären, wie deine Daten von uns verarbeitet werden.</p>
+<p><strong>Verantwortlich im Sinne der DSGVO ist:</strong><br>
+Jurek Leonhardt<br>
+E-Mail: <a href="mr_jleo@rocketmail.com">mr_jleo@rocketmail.com</a></p>
+<p>Solltest du per E-Mail mit uns Kontakt aufnehmen, werden die mitgeteilten Daten von uns gespeichert, um dein Anliegen zu bearbeiten.</p>
+<p>Zu den verarbeiteten Daten zählen:</p>
+<ul>
+<li>Dein Name</li>
+<li>Deine E-Mail-Adresse</li>
+</ul>
+<p>Wir werden die Daten löschen, sobald die Speicherung nicht mehr erforderlich ist oder die Verarbeitung einschränken, falls gesetzliche Aufbewahrungspflichten bestehen.</p>
+<h2>Betroffenenrechte</h2>
+<p>Du hast als betroffene Person das Recht auf Auskunft, das Recht auf Berichtigung oder Löschung, das Recht auf Einschränkung der Verarbeitung und das Recht auf Widerspruch gegen die Verarbeitung deiner Daten.</p>
+<p>Bitte richte deinen Widerspruch formlos an oben genannte Adresse.</p>
+<p>Darüber hinaus hast du das Recht auf Datenübertragbarkeit. Du hast weiter das Recht, dich bei einer Aufsichtsbehörde über die Verarbeitung zu beschweren. Eine Liste der entsprechenden Behörden findest du unter: <a href="https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html">https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html</a>.</p>
+<h2>Hosting</h2>
+<p>Unser Hoster erhebt in sog. Logfiles folgende Daten, die dein Browser übermittelt:</p>
+<p>IP-Adresse, die Adresse der vorher besuchten Website (Referer Anfrage-Header), Datum und Uhrzeit der Anfrage, Zeitzonendifferenz zur Greenwich Mean Time, Inhalt der Anforderung, HTTP-Statuscode, übertragene Datenmenge, Website, von der die Anforderung kommt und Informationen zu Browser und Betriebssystem.</p>
+<p>Das ist erforderlich, um unsere Website anzuzeigen und die Stabilität und Sicherheit zu gewährleisten. Dies entspricht unserem berechtigten Interesse im Sinne des Art. 6 Abs. 1 S. 1 lit. f DSGVO.</p>
+<p>Es erfolgt kein Tracking und wir haben auf diese Daten keinen direkten Zugriff, sondern erhalten lediglich eine anonymisierte, statistische Zusammenfassung. Diese beinhaltet die Adresse der vorher besuchten Seite, die Häufigkeit der jeweils aufgerufenen Seiten und die Anzahl eindeutiger Besucher. Diese Daten führen wir nicht mit anderen Daten zusammen.</p>
+<p>Wir setzen für die Zurverfügungstellung unserer Website folgenden Hoster ein:</p>
+<p>GitHub Inc.<br>
+88 Colin P Kelly Jr St<br>
+San Francisco, CA 94107<br>
+United States</p>
+<p>Dieser ist Empfänger deiner personenbezogenen Daten. Dies entspricht unserem berechtigten Interesse im Sinne des Art. 6 Abs. 1 S. 1 lit. f DSGVO, selbst keinen Server in unseren Räumlichkeiten vorhalten zu müssen. Serverstandort ist USA.</p>
+<p>Weitere Informationen zu Widerspruchs- und Beseitigungsmöglichkeiten gegenüber GitHub findest du unter: <a href="https://docs.github.com/en/free-pro-team@latest/github/site-policy/github-privacy-statement#github-pages">https://docs.github.com/en/free-pro-team@latest/github/site-policy/github-privacy-statement#github-pages</a></p>
+<p>Du hast das Recht der Verarbeitung zu widersprechen. Ob der Widerspruch erfolgreich ist, ist im Rahmen einer Interessenabwägung zu ermitteln.</p>
+<p>Die Daten werden gelöscht, sobald der Zweck der Verarbeitung entfällt.</p>
+<p>Die Verarbeitung der unter diesem Abschnitt angegebenen Daten ist weder gesetzlich noch vertraglich vorgeschrieben. Die Funktionsfähigkeit der Website ist ohne die Verarbeitung nicht gewährleistet.</p>
+<p>GitHub hat Compliance-Maßnahmen für internationale Datenübermittlungen umgesetzt. Diese gelten für alle weltweiten Aktivitäten, bei denen GitHub personenbezogene Daten von natürlichen Personen in der EU verarbeitet. Diese Maßnahmen basieren auf den EU-Standardvertragsklauseln (SCCs). Weitere Informationen findest du unter: <a href="https://docs.github.com/en/free-pro-team@latest/github/site-policy/github-data-protection-addendum#attachment-1%E2%80%93the-standard-contractual-clauses-processors">https://docs.github.com/en/free-pro-team@latest/github/site-policy/github-data-protection-addendum#attachment-1–the-standard-contractual-clauses-processors</a></p>
+<p>Quelle: <a href="https://opr.vc">opr.vc</a></p>
+
+  </div>
+
+  <div class="border-t border-neutral-600 py-4 mt-8">
+  <div class="container flex flex-col items-center lg:flex-row lg:items-start gap-4 lg:gap-8 font-light text-black dark:text-white">
+    <p>© 2022 Jurek Leonhardt</p>
+    <p class="text-center lg:mr-auto">Made with
+      <a href="https://github.com/mattwaler/tea-stack">TEA Stack</a>,
+      <a href="https://www.11ty.dev/">11ty</a>,
+      <a href="https://tailwindcss.com/">tailwindcss</a>,
+      <a href="https://alpinejs.dev/">Alpine.js</a> and
+      <a href="https://fontawesome.com/">Font Awesome</a>
+    </p>
+    
+        <a href="/datenschutz">
+          Datenschutz
+        </a>
+    
+        <a href="/impressum">
+          Impressum
+        </a>
+    
+  </div>
+</div>
+
+</body>
+</html>
