@@ -11,7 +11,7 @@
     <p class="text-center text-md">Leibniz University Hannover, Germany</p>
     <p class="flex justify-center gap-6 mt-6">
       {% for item in links %}
-      <a href="{{ item.url }}">
+      <a href="{{ item.url }}" title="{{ item.name }}">
         <i class="{{ item.icon }} text-4xl hover:scale-125 transition-all"></i>
       </a>
       {% endfor %}
