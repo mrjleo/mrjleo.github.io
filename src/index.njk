@@ -9,10 +9,10 @@
     <p class="text-center text-md">PhD Candidate</p>
     <p class="text-center text-md">L3S Research Center</p>
     <p class="text-center text-md">Leibniz University Hannover, Germany</p>
-    <p class="block text-center mt-8">
-      {% for item in social_media %}
+    <p class="flex justify-center gap-6 mt-6">
+      {% for item in links %}
       <a href="{{ item.url }}">
-        <i class="fa-brands {{ item.icon }} mx-2 text-4xl hover:scale-125 transition-all"></i>
+        <i class="{{ item.icon }} text-4xl hover:scale-125 transition-all"></i>
       </a>
       {% endfor %}
     </p>
