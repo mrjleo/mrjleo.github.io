@@ -18,6 +18,10 @@ module.exports = [
         "name": "LinkedIn",
         "url": "https://www.linkedin.com/in/jurek-leonhardt-4176a3176/",
         "icon": "fa-brands fa-linkedin"
-    }
+    },
+    {
+        "name": "E-Mail",
+        "url": "mailto:leonhardt@l3s.de",
+        "icon": "fa-solid fa-at"
+    },
 ]
-  
