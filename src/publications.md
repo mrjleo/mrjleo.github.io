@@ -9,7 +9,7 @@ layout: markdown
 ## Supervised Contrastive Learning Approach for Contextual Ranking
 Abhijit Anand, **Jurek Leonhardt**, Koustav Rudra, Avishek Anand\
 ICTIR 2022 (full paper)\
-[ACM](https://dl.acm.org/doi/10.1145/3539813.3545139) | [arXiv](https://arxiv.org/abs/2207.03153)
+[ACM](https://dl.acm.org/doi/10.1145/3539813.3545139) | [arXiv](https://arxiv.org/abs/2207.03153) | [slides](https://docs.google.com/presentation/d/1pFuxm3X4yARMQmlVeBOrFS4aj15gCAhH73EzPS4GdE4)
 
 ## Efficient Neural Ranking using Forward Indexes
 **Jurek Leonhardt**, Koustav Rudra, Megha Khosla, Abhijit Anand, Avishek Anand\
