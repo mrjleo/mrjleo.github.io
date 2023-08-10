@@ -1,17 +1,12 @@
 <div class="border-t border-neutral-600 py-4 mt-8">
   <div class="container flex flex-col items-center lg:flex-row lg:items-start gap-4 lg:gap-8 font-light text-black dark:text-white">
     <p>© {% currentYear %} Jurek Leonhardt</p>
-    <p class="text-center lg:mr-auto">Made with
+    <p class="text-center lg:ml-auto">Made with
       <a href="https://github.com/mattwaler/tea-stack">TEA Stack</a>,
       <a href="https://www.11ty.dev/">11ty</a>,
       <a href="https://tailwindcss.com/">tailwindcss</a>,
       <a href="https://alpinejs.dev/">Alpine.js</a> and
       <a href="https://fontawesome.com/">Font Awesome</a>
     </p>
-    {% for item in collections.footer %}
-        <a href="/{{ item.data.title | lower }}">
-          {{ item.data.title }}
-        </a>
-    {% endfor %}
   </div>
 </div>
