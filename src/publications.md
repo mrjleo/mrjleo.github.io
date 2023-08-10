@@ -9,7 +9,7 @@ layout: markdown
 ## Extractive Explanations for Interpretable Text Ranking
 
 **Jurek Leonhardt**, Koustav Rudra, Avishek Anand\
-TOIS (to appear)\
+TOIS 2023\
 [ACM](https://dl.acm.org/doi/10.1145/3576924) | [arXiv](https://arxiv.org/abs/2106.12460) | [code](https://github.com/mrjleo/ranking-models)
 
 ## Supervised Contrastive Learning Approach for Contextual Ranking
