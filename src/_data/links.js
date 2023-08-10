@@ -21,7 +21,7 @@ module.exports = [
     },
     {
         "name": "E-Mail",
-        "url": "mailto:leonhardt@l3s.de",
+        "url": "mailto:l.j.leonhardt@tudelft.nl",
         "icon": "fa-solid fa-at"
     },
 ]
