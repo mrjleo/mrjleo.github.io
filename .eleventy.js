@@ -5,6 +5,7 @@ module.exports = (config) => {
     open: true,
   })
   config.addPassthroughCopy('src/img');
+  config.addShortcode("currentYear", () => `${new Date().getFullYear()}`);
   return {
     dir: {
       input: 'src',
