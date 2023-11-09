@@ -9,8 +9,8 @@ layout: markdown
 ## Efficient Neural Ranking using Forward Indexes and Lightweight Encoders
 
 **Jurek Leonhardt**, Henrik Müller, Koustav Rudra, Megha Khosla, Abhijit Anand, Avishek Anand\
-_TOIS_, to appear (journal paper)\
-[arXiv](https://arxiv.org/abs/2311.01263) | [slides](https://mrjleo.github.io/slides/tois24_fast-forward-indexes) | [code](https://github.com/mrjleo/fast-forward-indexes)
+_TOIS_ (journal paper, just accepted)\
+[ACM](https://dl.acm.org/doi/10.1145/3631939) | [arXiv](https://arxiv.org/abs/2311.01263) | [slides](https://mrjleo.github.io/slides/tois24_fast-forward-indexes) | [code](https://github.com/mrjleo/fast-forward-indexes)
 
 ## Extractive Explanations for Interpretable Text Ranking
 
