@@ -8,18 +8,19 @@ layout: markdown
 
 ## Fast-Forward Indexes
 
-Fast-Forward indexes combine the efficiency of lexical sparse retrieval methods with the effectiveness of semantic dense retrieval methods. Our approach
-outperforms both sparse (e.g. BM25) and dense (e.g. TCT-ColBERT) retrievers and is more efficient than dense retrieval.
+Fast-Forward indexes combine the efficiency of lexical sparse retrieval methods with the effectiveness of semantic dense retrieval methods. The main features are:
+
+- Fast CPU-based ranking
+- Memory- and disk-based indexes
+- Index compression via _sequential coalescing_
+- Heuristic _early stopping_ technique to limit number of index look-ups
+- PyTerrier integration
 
 ```
 pip install fast-forward-indexes
 ```
 
-- Fast CPU-based ranking
-- Index compression
-- Early stopping for efficiency
-
-[API](https://mrjleo.github.io/fast-forward-indexes/latest/fast_forward.html) | [GitHub](https://github.com/mrjleo/fast-forward-indexes) | [PyPI](https://pypi.org/project/fast-forward-indexes/)
+[Documentation](https://mrjleo.github.io/fast-forward-indexes/docs) | [GitHub](https://github.com/mrjleo/fast-forward-indexes) | [PyPI](https://pypi.org/project/fast-forward-indexes/)
 
 ## Ranking Models
 
