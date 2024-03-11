@@ -54,16 +54,17 @@
   <div class="container prose dark:prose-invert">
     <h1>Projects</h1>
 <h2>Fast-Forward Indexes</h2>
-<p>Fast-Forward indexes combine the efficiency of lexical sparse retrieval methods with the effectiveness of semantic dense retrieval methods. Our approach
-outperforms both sparse (e.g. BM25) and dense (e.g. TCT-ColBERT) retrievers and is more efficient than dense retrieval.</p>
-<pre><code>pip install fast-forward-indexes
-</code></pre>
+<p>Fast-Forward indexes combine the efficiency of lexical sparse retrieval methods with the effectiveness of semantic dense retrieval methods. The main features are:</p>
 <ul>
 <li>Fast CPU-based ranking</li>
-<li>Index compression</li>
-<li>Early stopping for efficiency</li>
+<li>Memory- and disk-based indexes</li>
+<li>Index compression via <em>sequential coalescing</em></li>
+<li>Heuristic <em>early stopping</em> technique to limit number of index look-ups</li>
+<li>PyTerrier integration</li>
 </ul>
-<p><a href="https://mrjleo.github.io/fast-forward-indexes/latest/fast_forward.html">API</a> | <a href="https://github.com/mrjleo/fast-forward-indexes">GitHub</a> | <a href="https://pypi.org/project/fast-forward-indexes/">PyPI</a></p>
+<pre><code>pip install fast-forward-indexes
+</code></pre>
+<p><a href="https://mrjleo.github.io/fast-forward-indexes/docs">Documentation</a> | <a href="https://github.com/mrjleo/fast-forward-indexes">GitHub</a> | <a href="https://pypi.org/project/fast-forward-indexes/">PyPI</a></p>
 <h2>Ranking Models</h2>
 <p>This repository contains the implementations of our ranking models as well as some baselines. It supports training, validation, testing and re-ranking.</p>
 <p><a href="https://github.com/mrjleo/ranking-models">GitHub</a></p>
