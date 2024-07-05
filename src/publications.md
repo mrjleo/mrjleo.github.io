@@ -28,7 +28,7 @@ PhD thesis (2023)\
 
 **Jurek Leonhardt**, Koustav Rudra, Avishek Anand\
 Journal paper (TOIS 2023)\
-[ACM](https://dl.acm.org/doi/10.1145/3576924) | [arXiv](https://arxiv.org/abs/2106.12460) | | [slides](https://mrjleo.github.io/slides/2023-tois_select-and-rank) | [code](https://github.com/mrjleo/ranking-models)
+[ACM](https://dl.acm.org/doi/10.1145/3576924) | [arXiv](https://arxiv.org/abs/2106.12460) | [slides](https://mrjleo.github.io/slides/2023-tois_select-and-rank) | [code](https://github.com/mrjleo/ranking-models)
 
 ### Supervised Contrastive Learning Approach for Contextual Ranking
 
