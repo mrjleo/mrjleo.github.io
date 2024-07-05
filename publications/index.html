@@ -1,58 +1,96 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/main.bundle.css" />
+    <script src="/assets/main.bundle.js" defer></script>
+    <title>Publications</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/assets/main.bundle.css">
-  <script src="/assets/main.bundle.js" defer></script>
-  <title>Publications</title>
-</head>
-
-<body class=" bg-white dark:bg-neutral-800 flex flex-col justify-between min-h-screen">
-  <nav class="py-4 mb-8" x-data>
-  <div class="container flex justify-between font-light text-black dark:text-white">
+  <body
+    class=" bg-white dark:bg-neutral-800 flex flex-col justify-between min-h-screen"
+  >
+    <nav class="py-4 mb-8" x-data>
+  <div
+    class="container flex justify-between font-light text-black dark:text-white"
+  >
     <a class="" href="/">Home</a>
 
     
     <div class="hidden md:flex items-center gap-8">
-    
-        <a class="" href="/projects">
-          Projects
-        </a>
-    
-        <a class="underline" href="/publications">
-          Publications
-        </a>
-    
+      
+      <a
+        class=""
+        href="/projects"
+      >
+        Projects
+      </a>
+      
+      <a
+        class="underline"
+        href="/publications"
+      >
+        Publications
+      </a>
+      
     </div>
     <button class="md:hidden" @click="$store.nav.toggle()">
-      <svg x-show="!$store.nav.isOpen" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
-        <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"/>
+      <svg
+        x-show="!$store.nav.isOpen"
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+          clip-rule="evenodd"
+        />
       </svg>
-      <svg x-show="$store.nav.isOpen" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
-        <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
+      <svg
+        x-show="$store.nav.isOpen"
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+          clip-rule="evenodd"
+        />
       </svg>
     </button>
   </div>
 
   
-  <nav class="container mt-8 flex flex-col gap-3 md:hidden font-light text-black dark:text-white" x-cloak x-show="$store.nav.isOpen">
+  <nav
+    class="container mt-8 flex flex-col gap-3 md:hidden font-light text-black dark:text-white"
+    x-cloak
+    x-show="$store.nav.isOpen"
+  >
     
-      <a class="" href="/projects">
-        Projects
-      </a>
+    <a
+      class=""
+      href="/projects"
+    >
+      Projects
+    </a>
     
-      <a class="underline" href="/publications">
-        Publications
-      </a>
+    <a
+      class="underline"
+      href="/publications"
+    >
+      Publications
+    </a>
     
   </nav>
 </nav>
-
-  
-  <div class="container prose dark:prose-invert">
-    <h1>Publications</h1>
+ 
+<div class="container prose dark:prose-invert">
+  <h1>Publications</h1>
 <h3>Data Augmentation for Sample Efficient and Robust Document Ranking</h3>
 <p>Abhijit Anand, <strong>Jurek Leonhardt</strong>, Jaspreet Singh, Koustav Rudra, Avishek Anand<br>
 Journal paper (TOIS 2024)<br>
@@ -94,13 +132,14 @@ Full paper (ECML-PKDD 2019)<br>
 Short paper (TheWebConf 2018)<br>
 <a href="https://dl.acm.org/doi/10.1145/3184558.3186949">ACM</a> | <a href="https://arxiv.org/abs/1807.06349">arXiv</a></p>
 
-  </div>
-
-  <div class="border-t border-neutral-600 py-4 mt-8">
-  <div class="container flex flex-col items-center lg:flex-row lg:items-start gap-4 lg:gap-8 font-light text-black dark:text-white">
+</div>
+ <div class="border-t border-neutral-600 py-4 mt-8">
+  <div
+    class="container flex flex-col items-center lg:flex-row lg:items-start gap-4 lg:gap-8 font-light text-black dark:text-white"
+  >
     <p>© 2024 Jurek Leonhardt</p>
-    <p class="text-center lg:ml-auto">Made with
-      <a href="https://github.com/mattwaler/tea-stack">TEA Stack</a>,
+    <p class="text-center lg:ml-auto">
+      Made with <a href="https://github.com/mattwaler/tea-stack">TEA Stack</a>,
       <a href="https://www.11ty.dev/">11ty</a>,
       <a href="https://tailwindcss.com/">tailwindcss</a>,
       <a href="https://alpinejs.dev/">Alpine.js</a> and
@@ -109,5 +148,5 @@ Short paper (TheWebConf 2018)<br>
   </div>
 </div>
 
-</body>
+  </body>
 </html>
