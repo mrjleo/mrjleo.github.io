@@ -13,7 +13,7 @@ Fast-Forward indexes combine the efficiency of lexical sparse retrieval methods 
 - Fast CPU-based ranking
 - Memory- and disk-based indexes
 - Index compression via _sequential coalescing_
-- Heuristic _early stopping_ technique to limit number of index look-ups
+- Heuristic _early stopping_ technique to limit the number of index look-ups
 - PyTerrier integration
 
 ```
@@ -24,7 +24,7 @@ pip install fast-forward-indexes
 
 ## Ranking Models
 
-This repository contains the implementations of our ranking models as well as some baselines. It supports training, validation, testing and re-ranking.
+This repository contains the implementations of our ranking models as well as some baselines. It supports training, validation, testing, and re-ranking.
 
 [GitHub](https://github.com/mrjleo/ranking-models)
 

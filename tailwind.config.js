@@ -1,19 +1,18 @@
 module.exports = {
-  content: ['./src/**/*.{js,md,njk,svg}'],
+  content: ["./src/**/*.{js,md,njk,svg}"],
   plugins: [
-    require('@tailwindcss/forms'),
-    require('@tailwindcss/typography'),
-    require('tailwindcss-debug-screens'),
+    require("@tailwindcss/forms"),
+    require("@tailwindcss/typography"),
+    require("tailwindcss-debug-screens"),
   ],
   theme: {
     container: {
       center: true,
-      padding: '1.5rem',
+      padding: "1.5rem",
     },
     debugScreens: {
-      position: ['bottom', 'right'],
+      position: ["bottom", "right"],
     },
-    extend: {
-    },
+    extend: {},
   },
-}
+};
