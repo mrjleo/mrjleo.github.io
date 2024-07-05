@@ -11,8 +11,8 @@
   <body
     class="{{ 'debug-screens' if env.devMode }} bg-white dark:bg-neutral-800 flex flex-col justify-between min-h-screen"
   >
-    {% include 'header.njk' %} {% block body %}
+    {% include "header.njk" %} {% block body %}
     {{ content | safe }}
-    {% endblock %} {% include 'footer.njk' %}
+    {% endblock %} {% include "footer.njk" %}
   </body>
 </html>
