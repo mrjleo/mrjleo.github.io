@@ -6,6 +6,12 @@ layout: markdown
 
 # {{title}}
 
+### Understanding the User: An Intent-Based Ranking Dataset
+
+Abhijit Anand, **Jurek Leonhardt**, Venktesh V, Avishek Anand\
+Resource paper (CIKM 2024)\
+[ACM](https://dl.acm.org/doi/10.1145/3627673.3679166) | [arXiv](https://arxiv.org/abs/2408.17103) | [code](https://github.com/elixir-research-group/DL-MIA)
+
 ### Data Augmentation for Sample Efficient and Robust Document Ranking
 
 Abhijit Anand, **Jurek Leonhardt**, Jaspreet Singh, Koustav Rudra, Avishek Anand\
