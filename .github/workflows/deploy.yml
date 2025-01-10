@@ -3,23 +3,46 @@ name: Deploy website
 on:
   push:
     branches: [main]
-  pull_request:
-    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
-  build:
+  build_and_deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
-      - name: Install dependencies
+      - name: Check out ${{ github.ref_name }}
+        uses: actions/checkout@v4
+
+      - name: Set up node
         uses: actions/setup-node@v4
         with:
           node-version-file: ".nvmrc"
-      - run: npm install
-      - run: npm run build
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v4
+
+      - name: Install dependencies and build
+        run: |
+          npm install
+          npm run build
+
+      - name: Set up Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-          destination_dir: .
+          path: "./dist"
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
