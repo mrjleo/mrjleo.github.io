@@ -1,6 +1,6 @@
 <nav class="py-4 mb-8" x-data>
   <div
-    class="container flex justify-between font-light text-black dark:text-white"
+    class="flex justify-between font-light text-black dark:text-white px-8 py-4"
   >
     <a class="{{ 'underline' if page.fileSlug == '' }}" href="/">Home</a>
 
@@ -47,7 +47,7 @@
 
   {# Mobile Navigation #}
   <nav
-    class="container mt-8 flex flex-col gap-3 md:hidden font-light text-black dark:text-white"
+    class="container mt-4 flex flex-col gap-3 md:hidden font-light text-black dark:text-white px-8"
     x-cloak
     x-show="$store.nav.isOpen"
   >

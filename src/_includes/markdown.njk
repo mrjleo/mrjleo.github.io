@@ -1,5 +1,7 @@
 {% extends "layout.njk" %} {% block body %}
-<div class="container prose dark:prose-invert">
-  {{ content | safe }}
+<div class="w-full flex flex-col items-center">
+  <div class="prose dark:prose-invert px-8">
+    {{ content | safe }}
+  </div>
 </div>
 {% endblock %}
