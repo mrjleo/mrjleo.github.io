@@ -1,7 +1,5 @@
 {% set title = "Jurek Leonhardt" %} {% extends "layout.njk" %} {% block body %}
-<main
-  class="flex flex-col columns-2 gap-32 justify-center lg:flex-row px-8"
->
+<main class="flex flex-col columns-2 gap-32 justify-center lg:flex-row px-8">
   <div class="min-w-fit mt-16 lg:my-auto text-black dark:text-white">
     <img class="mx-auto h-32 rounded-full lg:h-48 mb-4" src="img/me.jpg" />
     <p class="text-center text-xl font-bold my-2">Jurek Leonhardt</p>
@@ -22,7 +20,7 @@
       <a href="https://www.tudelft.nl/">TU Delft</a>.
     </p>
     <p>
-      I was a PhD student at
+      I completed my PhD in computer science at
       <a href="https://l3s.de/">L3S Research Center</a>,
       <a href="https://uni-hannover.de">Leibniz University Hannover</a>,
       Germany, under
@@ -31,22 +29,17 @@
       <a href="https://www.avishekanand.com/">Prof. Avishek Anand</a>.
     </p>
     <p>
+      I mainly work on <b>information retrieval (web search)</b>. Specifically,
+      my current focus lies on efficiency of neural ranking models. Less
+      prominently, I work on effectiveness and interpretability (by design) for
+      ranking and retrieval.
+    </p>
+    <p>
       Check out my <a href="https://doi.org/10.15488/15769">PhD thesis</a> (<a
         href="https://mrjleo.github.io/slides/2023-phd"
         >slides</a
-      >)!
+      >) and some of my <a href="/projects">projects</a>!
     </p>
-    <p>
-      I mainly work on information retrieval. Specifically, my current focus
-      lies on <b>efficiency of neural ranking models</b>. Less prominently, I
-      work on effectiveness and interpretability (by design) for ranking and
-      retrieval.
-    </p>
-    <h2>Research Interests</h2>
-    <ul>
-      <li>Efficient and Effective Neural Ranking</li>
-      <li>Interpretable Models for Information Retrieval</li>
-    </ul>
   </div>
 </main>
 {% endblock %}
